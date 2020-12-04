@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Michael's Café - Menu</title>
+<title>Michael's Café - Cart</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,61 +27,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   </div>
 </div>
   
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-padding">
-    <span class="w3-tag w3-xlarge">Open weekdays from 7am to 4:30pm</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white w3-hide-small" style="font-size:100px">Michael's<br>Café</span>
-    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
-    <p><a href="#menu" class="w3-button w3-xxlarge w3-red">Let me see the menu</a></p>
-  </div>
-</header>
 
-<!-- Menu Container -->
+
+<!-- Cart Container -->
 <div class="w3-container w3-red w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
   
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CART</h1>
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-white">Lunch</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-white">Sides</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-white">Dessert</div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-white">Your Order</div>
       </a>
     </div>
 
 <!-- Lunch Menu -->
     <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
       <!-- Example Item Format -->
-	  <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+	  <h1><b>Margherita</b> <span class="w3-center w3-tag w3-light-grey w3-round">X1</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
       <hr>
    
     </div>
-
-<!-- Sides Menu -->
-    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-      <!-- Example Item Format -->
-	  <h1><b>Lasagna</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-      <hr>
-   
-    </div>
-
-<!-- Desert Menu -->
-    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-      <!-- Example Item Format -->
-	  <h1><b>Today's Soup</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-      <p class="w3-text-grey">Ask the waiter</p>
-      <hr>
    
     </div><br>
+	
+	<a href="CheckOut_HTML.html" class="w3-bar-item w3-button w3-right"><span class="w3-right w3-tag w3-light-grey w3-round">CHECK OUT</span></a>
 
   </div>
 </div>
