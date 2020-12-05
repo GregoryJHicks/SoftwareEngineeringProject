@@ -7,8 +7,5 @@ namespace SoftwareEngineeringProject.Models
 {
     public class Order
     {
-        public string thing { get; set; }
-        public int something { get; set; }
-        public string ansdjasdisad { get; set; }
     }
 }

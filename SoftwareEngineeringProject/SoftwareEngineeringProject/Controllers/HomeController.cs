@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineeringProject.Controllers
 {
-    public class MainController : Controller
+    public class HomeController : Controller
     {
-        private readonly ILogger<MainController> _logger;
+        private readonly ILogger<HomeController> _logger;
 
-        public MainController(ILogger<MainController> logger)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
@@ -23,12 +23,7 @@ namespace SoftwareEngineeringProject.Controllers
             return View();
         }
 
-        public IActionResult Cart()
-        {
-            return View();
-        }
-
-        public IActionResult Orders()
+        public IActionResult Privacy()
         {
             return View();
         }
@@ -37,6 +32,6 @@ namespace SoftwareEngineeringProject.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }             
+        }
     }
 }
