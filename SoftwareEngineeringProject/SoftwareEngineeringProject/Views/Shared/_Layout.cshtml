@@ -3,15 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SoftwareEngineeringProject</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <title>@ViewData["Title"] - Michael's Cafe</title>
+
+    <!--Here is the meta data for the css stuff, feel free to edit this part-->
+    <link rel="stylesheet" href="~/css/w3schools.css" />
+    <link rel="stylesheet" href="~/css/Google_Amatic_Font.css" />
+    <!--END meta data for css-->
+
 </head>
 <body>
+
+    <!--Here is the Nav bar, feel free to edit this as you like-->
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SoftwareEngineeringProject</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Michael's Cafe</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,19 +28,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Cart">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Orders">Orders</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!--END nav bar-->
+
+    <!--DO NOT TOUCH THIS-->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+    <!--END DO NOT TOUCH THIS-->
 
+    <!--Here is the footer feel free to edit this, especiallt the css bits-->
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - SoftwareEngineeringProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -44,5 +58,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+    <!--END footer-->
+
 </body>
 </html>
