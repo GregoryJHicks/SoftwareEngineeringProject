@@ -18,12 +18,28 @@ namespace SoftwareEngineeringProject.Controllers
             _logger = logger;
         }
 
+        //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Payment()
+        {
+            return View();
+        }
+
+        public IActionResult Reciept()
+        {
+            return View();
+        }
+
+        public IActionResult Cart()
+        {
+            return View();
+        }
+
+        public IActionResult Orders()
         {
             return View();
         }
