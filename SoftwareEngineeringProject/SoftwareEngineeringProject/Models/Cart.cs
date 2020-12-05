@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineeringProject.Models
 {
-    public class Menu
+    public class Cart
     {
+        Object[] cart = new Object[10];
     }
 }
