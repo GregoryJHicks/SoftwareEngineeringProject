@@ -21,7 +21,8 @@ namespace SoftwareEngineeringProject.Controllers
         //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
-            return View();
+            FullMenu temp = new FullMenu();
+            return View(temp);
         }
 
         public IActionResult Payment()

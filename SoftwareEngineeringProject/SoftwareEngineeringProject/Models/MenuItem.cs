@@ -8,5 +8,11 @@ namespace SoftwareEngineeringProject.Models
     //take in selected items from FullMenu Linked List and turn it into objects that are sent to the cart
     public class MenuItem
     {
+        public string TempVal;
+
+        public MenuItem(string RandomThing)
+        {
+            TempVal = RandomThing;
+        }
     }
 }
