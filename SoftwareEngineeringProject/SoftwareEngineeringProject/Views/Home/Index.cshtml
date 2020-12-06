@@ -16,9 +16,11 @@
 </header>
 
 @{
-    foreach (var item in )
+    foreach (var item in Model)
     {
-        <p>Hello</p>
+        <p>
+            @item.TempVal;
+        </p>
         <br />
     }
 }

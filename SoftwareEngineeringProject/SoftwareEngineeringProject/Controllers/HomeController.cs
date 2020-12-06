@@ -21,7 +21,11 @@ namespace SoftwareEngineeringProject.Controllers
         //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
-            FullMenu temp = new FullMenu();
+            MenuItem temp1 = new MenuItem("Hello");
+            MenuItem temp2 = new MenuItem("World");
+
+            List<MenuItem> temp = new List<MenuItem> { temp1, temp2 };
+
             return View(temp);
         }
 
