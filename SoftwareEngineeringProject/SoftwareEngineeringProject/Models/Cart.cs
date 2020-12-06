@@ -5,8 +5,16 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineeringProject.Models
 {
-    public class Cart
+    public static class Cart
     {
-        Object[] cart = new Object[10];
+        public static List<MenuItem> Contents = new List<MenuItem>();
+        public static void AddToCart(MenuItem item)
+        {
+            Contents.Add(item);
+        }
+        public static void ResetCart()
+        {
+            Contents.Clear();
+        }
     }
 }

@@ -3,5 +3,28 @@
     ViewData["Title"] = "Orders";
 }
 
-<h1>Orders</h1>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-white w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Index">Menu</a>
+        <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Cart">My Cart</a>
+        <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Orders">Previous Orders</a>
+    </div>
+</div>
 
+<div class="w3-container w3-red w3-padding-64 w3-xxlarge">
+    <div class="w3-content">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">PREVIOUS ORDERS</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <div class="w3-padding-large">
+                <div class="w3-white">
+                    <!-- Example Item Format -->
+                    @{
+                        <!--For loop here-->
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

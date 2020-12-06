@@ -23,10 +23,8 @@ namespace SoftwareEngineeringProject.Controllers
         //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
-            MenuItem temp1 = new MenuItem();
-            MenuItem temp2 = new MenuItem();
-            List<MenuItem> Random = new List<MenuItem> { temp1, temp2 };
-            return View(Random);
+            List<MenuItem> List = LoadJson();
+            return View(List);
         }
 
         public IActionResult Payment()
@@ -49,12 +47,21 @@ namespace SoftwareEngineeringProject.Controllers
             return View();
         }
 
-        public void LoadJson()
+        public IActionResult Add(int Id)
+        {
+            List<MenuItem> tempMenu = LoadJson();
+            var item = tempMenu.Find(delegate (MenuItem item) { return item.food_id == Id; });
+            Models.Cart.AddToCart(item);
+            return RedirectToAction("Index", "Home");
+        }
+
+        public List<MenuItem> LoadJson()
         {
             using (StreamReader s = new StreamReader("menu.json"))
             {
                 string json = s.ReadToEnd();
                 List<MenuItem> items = JsonConvert.DeserializeObject<List<MenuItem>>(json);
+                return items;
             }
         }
 
