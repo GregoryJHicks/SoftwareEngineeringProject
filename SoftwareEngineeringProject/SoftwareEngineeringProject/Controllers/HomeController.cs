@@ -26,7 +26,7 @@ namespace SoftwareEngineeringProject.Controllers
             MenuItem temp1 = new MenuItem();
             MenuItem temp2 = new MenuItem();
             List<MenuItem> list = LoadJson();
-            return View(Random);
+            return View(list);
         }
 
         public IActionResult Payment()
@@ -49,12 +49,13 @@ namespace SoftwareEngineeringProject.Controllers
             return View();
         }
 
-        public void LoadJson()
+        public List<MenuItem> LoadJson()
         {
             using (StreamReader s = new StreamReader("menu.json"))
             {
                 string json = s.ReadToEnd();
                 List<MenuItem> items = JsonConvert.DeserializeObject<List<MenuItem>>(json);
+                return items;
             }
         }
 
