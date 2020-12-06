@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Views\Home\mc_bg_img.jpg" />
+    <None Include="wwwroot\css\mc_bg_img.jpg" />
   </ItemGroup>
 
   <ItemGroup>

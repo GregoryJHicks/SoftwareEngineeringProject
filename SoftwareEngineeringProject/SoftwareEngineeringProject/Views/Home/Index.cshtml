@@ -4,9 +4,25 @@
     ViewData["Title"] = "Home Page";
 }
 
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(~/css/mc_bg_img.jpg); /*Cannot figure out the image*/
+    min-height: 90%;
+}
+
+<style>
+    header 
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(~/css/mc_bg_img.jpg); /*Cannot figure out the image*/
+        min-height: 90%;
+    }
+</style>
+
 <!--Header for the Menu-->
-<link rel="stylesheet" href="~/css/w3schools.css" />
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-bottomleft w3-padding">
         <span class="w3-tag w3-xlarge">Open weekdays from 7am to 4:30pm</span>
     </div>
@@ -18,10 +34,18 @@
 @{
     foreach (var item in Model)
     {
-        <p>
-            @item.TempVal;
+        <h1>
+            <b>
+                Name
+            </b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">
+                price
+            </span>
+        </h1>
+
+        <p class="w3-text-grey">
+            description
         </p>
-        <br />
     }
 }
 
