@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\death\\Documents\\GitHub\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj": {}
+    "C:\\Code\\GitHub Repositories\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\death\\Documents\\GitHub\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj": {
+    "C:\\Code\\GitHub Repositories\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\death\\Documents\\GitHub\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj",
+        "projectUniqueName": "C:\\Code\\GitHub Repositories\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj",
         "projectName": "SoftwareEngineeringProject",
-        "projectPath": "C:\\Users\\death\\Documents\\GitHub\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj",
-        "packagesPath": "C:\\Users\\death\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\death\\Documents\\GitHub\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\obj\\",
+        "projectPath": "C:\\Code\\GitHub Repositories\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject.csproj",
+        "packagesPath": "C:\\Users\\Gregory\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\GitHub Repositories\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\SoftwareEngineeringProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\death\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gregory\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
