@@ -34,7 +34,12 @@ namespace SoftwareEngineeringProject.Controllers
 
         public IActionResult Receipt()
         {
-            return View();
+            Order temp = new Order();
+            temp.ProcessOrder();
+            temp.Name = "Bob";
+            temp.Address = "Somewhere";
+            temp.CardNumber = "1234567890123456";
+            return View(temp);
         }
 
         public IActionResult CartView()

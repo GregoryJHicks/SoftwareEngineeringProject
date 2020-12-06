@@ -13,5 +13,10 @@ namespace SoftwareEngineeringProject.Models
         {
             Orders.Add(temp);
         }
+
+        public static Order Last()
+        {
+            return Orders[Orders.Count - 1];
+        }
     }
 }
