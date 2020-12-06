@@ -1,4 +1,5 @@
-﻿
+﻿@model SoftwareEngineeringProject.Models.Order
+
 @{
     ViewData["Title"] = "Receipt";
 }
@@ -6,21 +7,50 @@
 
 <div class="w3-container w3-red w3-padding-64 w3-xxlarge">
     <div class="w3-content">
-
         <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">RECEIPT</h1>
         <div class="w3-row w3-center w3-border w3-border-dark-grey">
-            <div class="w3-padding-large">
+            <div class="w3-padding-large w3-container">
                 <div class="w3-white">
-                    <!-- Example Item Format -->
+                    <p class="w3-text-grey w3-center">
+                        Michael's Café
+                        <br />
+                        @Model.TimeOfOrder
+                        <br />
+                        Order Name: @Model.Name
+                    </p>
+                    <hr>
                     @{
-                        <!--For loop here-->
+                        foreach (var item in Model.Contents)
+                        {
+                            <h1>
+                                <b>
+                                    @item.food_name
+                                </b>
+                                <span class="w3-right w3-tag w3-dark-grey w3-round">
+                                    @item.price
+                                </span>
+                            </h1>
+                            <hr>
+                        }
                     }
+
+                    <h1>
+                        <span class="w3-right w3-tag w3-dark-grey w3-round">
+                            Subtotal: @Math.Round(Model.SubTotal, 2)
+                            <br />
+                            Tax: @Math.Round(Model.GetTaxRate(), 2)
+                            <br />
+                            Total: @Math.Round(Model.Total, 2)
+                        </span>
+                    </h1>
+                    <hr>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Return to Menu</a>
+    <br />
+    <br />
+    <a asp-action="Index" class="w3-centered w3-tag w3-dark-grey w3-round">
+        Return to Menu
+    </a>
 </div>
