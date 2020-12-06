@@ -8,7 +8,6 @@ using System.Linq;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.IO;
-using Newtonsoft.Json.Linq;
 
 namespace SoftwareEngineeringProject.Controllers
 {
@@ -24,10 +23,8 @@ namespace SoftwareEngineeringProject.Controllers
         //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
-            MenuItem temp1 = new MenuItem();
-            MenuItem temp2 = new MenuItem();
-            List<MenuItem> list = LoadJson();
-            return View(list);
+            List<MenuItem> List = LoadJson();
+            return View(List);
         }
 
         public IActionResult Payment()
@@ -48,6 +45,14 @@ namespace SoftwareEngineeringProject.Controllers
         public IActionResult Orders()
         {
             return View();
+        }
+
+        public IActionResult Add(int Id)
+        {
+            List<MenuItem> tempMenu = LoadJson();
+            var item = tempMenu.Find(delegate (MenuItem item) { return item.food_id == Id; });
+            Models.Cart.AddToCart(item);
+            return RedirectToAction("Index", "Home");
         }
 
         public List<MenuItem> LoadJson()
