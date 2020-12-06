@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #pragma checksum "C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "d5302398745794a0f1c97035e37270a2ad95433c"
+=======
+#pragma checksum "C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "a4f31ca58c5b84a9b5002a210e548fa90fca8d21"
+>>>>>>> Stashed changes
 =======
 #pragma checksum "C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "a4f31ca58c5b84a9b5002a210e548fa90fca8d21"
 >>>>>>> Stashed changes
@@ -31,7 +35,11 @@ using SoftwareEngineeringProject.Models;
 #line hidden
 #nullable disable
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d5302398745794a0f1c97035e37270a2ad95433c", @"/Views/Home/Index.cshtml")]
+=======
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a4f31ca58c5b84a9b5002a210e548fa90fca8d21", @"/Views/Home/Index.cshtml")]
+>>>>>>> Stashed changes
 =======
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a4f31ca58c5b84a9b5002a210e548fa90fca8d21", @"/Views/Home/Index.cshtml")]
 >>>>>>> Stashed changes
@@ -41,6 +49,10 @@ using SoftwareEngineeringProject.Models;
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/w3schools.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/Google_Amatic_Font.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+>>>>>>> Stashed changes
 =======
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/Google_Amatic_Font.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
 >>>>>>> Stashed changes
@@ -66,6 +78,10 @@ using SoftwareEngineeringProject.Models;
         }
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
+>>>>>>> Stashed changes
 =======
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
 >>>>>>> Stashed changes
@@ -75,9 +91,14 @@ using SoftwareEngineeringProject.Models;
             WriteLiteral("\r\n\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>");
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 3 "C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
   
     ViewData["Title"] = "Home Page";
+=======
+#line 7 "C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
+      Write(ViewData["Title"]);
+>>>>>>> Stashed changes
 =======
 #line 7 "C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
       Write(ViewData["Title"]);
@@ -87,8 +108,13 @@ using SoftwareEngineeringProject.Models;
 #line hidden
 #nullable disable
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             WriteLiteral("\r\n<!--Header for the Menu-->\r\n");
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d5302398745794a0f1c97035e37270a2ad95433c4367", async() => {
+=======
+            WriteLiteral(" - Michael\'s Cafe</title>\r\n\r\n    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a4f31ca58c5b84a9b5002a210e548fa90fca8d214990", async() => {
+>>>>>>> Stashed changes
 =======
             WriteLiteral(" - Michael\'s Cafe</title>\r\n\r\n    ");
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a4f31ca58c5b84a9b5002a210e548fa90fca8d214990", async() => {
@@ -106,6 +132,7 @@ using SoftwareEngineeringProject.Models;
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             WriteLiteral(@"
 <header class=""bgimg w3-display-container w3-grayscale-min"" id=""home"">
@@ -141,6 +168,31 @@ using SoftwareEngineeringProject.Models;
             height: 100%
         }
 
+=======
+            WriteLiteral("\r\n    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a4f31ca58c5b84a9b5002a210e548fa90fca8d216108", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
+
+
+    <style>
+        body, html {
+            height: 100%
+        }
+
+>>>>>>> Stashed changes
         body, h1, h2, h3, h4, h5, h6 {
             font-family: ""Amatic SC"", sans-serif
         }
@@ -186,6 +238,7 @@ using SoftwareEngineeringProject.Models;
 ");
 #nullable restore
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #line 18 "C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
   
     foreach (var item in Model)
@@ -204,14 +257,46 @@ using SoftwareEngineeringProject.Models;
 #nullable restore
 #line 22 "C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
        Write(item.TempVal);
+=======
+#line 57 "C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
+                             foreach (var item in Model)
+                                {
+>>>>>>> Stashed changes
 
 #line default
 #line hidden
 #nullable disable
+<<<<<<< Updated upstream
             WriteLiteral(";\r\n        </p>\r\n        <br />\r\n");
 #nullable restore
 #line 25 "C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
     }
+=======
+                WriteLiteral(@"                                    <h1>
+                                        <b>
+                                            Margherita
+                                        </b>
+                                        <span class=""w3-right w3-tag w3-dark-grey w3-round"">
+                                            $12.50
+                                        </span>
+                                    </h1>
+                                    <p class=""w3-text-grey"">
+                                        Fresh tomatoes, fresh mozzarella, fresh basil
+                                        <a");
+                BeginWriteAttribute("href", " href=\"", 2764, "\"", 2771, 0);
+                EndWriteAttribute();
+                WriteLiteral(@" class=""w3-bar-item w3-button w3-right"">
+                                            <span class=""w3-right w3-tag w3-red w3-round"">
+                                                ADD TO CART
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <hr>
+");
+#nullable restore
+#line 76 "C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\Views\Home\Index.cshtml"
+                                }
+>>>>>>> Stashed changes
 =======
                 WriteLiteral(@"                                    <h1>
                                         <b>
