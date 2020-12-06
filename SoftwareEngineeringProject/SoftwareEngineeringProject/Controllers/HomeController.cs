@@ -25,7 +25,7 @@ namespace SoftwareEngineeringProject.Controllers
         {
             MenuItem temp1 = new MenuItem();
             MenuItem temp2 = new MenuItem();
-            List<MenuItem> Random = new List<MenuItem> { temp1, temp2 };
+            List<MenuItem> list = LoadJson();
             return View(Random);
         }
 
