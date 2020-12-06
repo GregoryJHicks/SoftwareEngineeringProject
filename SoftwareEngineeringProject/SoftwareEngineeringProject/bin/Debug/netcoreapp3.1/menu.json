@@ -1,0 +1,171 @@
+{
+  
+  "0": {
+    "food_id": 1,
+    "food_name": "Garden Salad",
+    "price": 3.99,
+    "description": "Bed of Romaine Lettuce w. Tomato, Cucumber, Carrots, Boiled Egg",
+  },
+  "1": {
+    "food_id": 2,
+    "food_name": "Caesar Salad",
+    "price": 3.99,
+    "description": "Bed of Romaine lettuce dressed w. house Caesar dressing",
+  },
+  "2": {
+    "food_id": 3,
+    "food_name": "Tuna Salad",
+    "price": 4.99,
+    "description": "House Tuna Salad scoops on top of House Garden Salad",
+  },
+  "3": {
+    "food_id": 4,
+    "food_name": "Chicken Salad",
+    "price": 4.99,
+    "description": "House Chicken Salad scoops on top of House Garden Salad",
+  },
+  "4": {
+    "food_id": 5,
+    "food_name": "Grilled Chicken Salad",
+    "price": 5.19,
+    "description": "Grilled Chicken on top of House Garden Salad",
+  },
+  "5": {
+    "food_id": 6,
+    "food_name": "Grilled Chicken Caesar Salad",
+    "price": 5.19,
+    "description": "Grilled Chicken on top of House Caesar Salad",
+  },
+  "6": {
+    "food_id": 7,
+    "food_name": "Fried Chicken Salad",
+    "price": 6.79,
+    "description": "Fried Chicken Tenders on top of House Garden Salad",
+  },
+  "7": {
+    "food_id": 8,
+    "food_name": "Chef Salad",
+    "price": 6.79,
+    "description": "Ham, Turkey, Cheese slices on top of House Garden Salad",
+  },
+  "8": {
+    "food_id": 9,
+    "food_name": "Ham & Cheese Sandwich",
+    "price": 4.89,
+    "description": null,
+  },
+  "9": {
+    "food_id": 10,
+    "food_name": "Turkey & Cheese Sandwich",
+    "price": 4.89,
+    "description": null,
+  },
+  "10": {
+    "food_id": 11,
+    "food_name": "Roast Beef & Cheese Sandwich",
+    "price": 5.39,
+    "description": null,
+  },
+  "11": {
+    "food_id": 12,
+    "food_name": "Chicken Salad Sandwich",
+    "price": 4.89,
+    "description": null,
+  },
+  "12": {
+    "food_id": 13,
+    "food_name": "Tuna Salad Sandwich",
+    "price": 4.89,
+    "description": null,
+  },
+  "13": {
+    "food_id": 14,
+    "food_name": "B.L.T.",
+    "price": 4.29,
+    "description": null,
+  },
+  "14": {
+    "food_id": 15,
+    "food_name": "Hotdog - Grilled",
+    "price": 1.99,
+    "description": null,
+  },
+  "15": {
+    "food_id": 16,
+    "food_name": "Grilled Chicken Breast Sandwich",
+    "price": 5.49,
+    "description": null,
+  },
+  "16": {
+    "food_id": 17,
+    "food_name": "Club Sandwich",
+    "price": 5.49,
+    "description": null,
+  },
+  "17": {
+    "food_id": 18,
+    "food_name": "Grilled Chicken Caesar Pita Wrap",
+    "price": 5.49,
+    "description": null,
+  },
+  "18": {
+    "food_id": 19,
+    "food_name": "Philly Cheese Steak",
+    "price": 5.49,
+    "description": null,
+  },
+  "19": {
+    "food_id": 20,
+    "food_name": "Fried Chicken Sandwich",
+    "price": 5.49,
+    "description": null,
+  },
+  "20": {
+    "food_id": 21,
+    "food_name": "Gyro Pita Wrap",
+    "price": 5.49,
+    "description": null,"
+  },
+  "21": {
+    "food_id": 22,
+    "food_name": "Grilled Hamburger",
+    "price": 4.09,
+    "description": null,
+  },
+  "22": {
+    "food_id": 23,
+    "food_name": "Grilled Cheese Burger",
+    "price": 4.39,
+    "description": null,
+  },
+  "23": {
+    "food_id": 24,
+    "food_name": "Bacon Cheese Burger",
+    "price": 4.89,
+    "description": null,
+  },
+  "24": {
+    "food_id": 25,
+    "food_name": "Chicken Tenders",
+    "price": 4.79,
+    "description": "+Add fries for $2.10",
+  },
+  "25": {
+    "food_id": 26,
+    "food_name": "French Fries",
+    "price": 2.49,
+    "description": null,
+  },
+  "26": {
+    "food_id": 27,
+    "food_name": "Baked Potato w. toppings",
+    "price": 3.89,
+    "description": "Butter, Cheese, Sour Cream & Bacon Bits",
+  },
+  "27": {
+    "food_id": 28,
+    "food_name": "Soup of the Day",
+    "price": 3.29,
+    "description": "Vegetable, Chicken Noodle, Chili & More...",
+  }
+}
