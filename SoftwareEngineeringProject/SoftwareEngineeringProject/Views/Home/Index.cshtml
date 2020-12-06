@@ -4,7 +4,7 @@
 <div class="w3-top w3-hide-small">
     <div class="w3-bar w3-xlarge w3-white w3-opacity w3-hover-opacity-off" id="myNavbar">
         <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Index">Menu</a>
-        <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Cart">My Cart</a>
+        <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="CartView">My Cart</a>
         <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Orders">Previous Orders</a>
     </div>
 </div>
@@ -37,14 +37,14 @@
                                     </div>
                                     <div class="menu-item--price"  style="width:100px;text-align:right;">
                                         <span class="w3-tag w3-dark-grey w3-round">
-                                            @Html.DisplayFor(modelItem => item.price)
+                                            @item.price
                                         </span>
                                     </div>
                                 </div>
                                   
                                 <div class="flex-container w3-text-grey">
                                     <div class="menu-item--price" style="width:600px;text-align:left;">
-                                        @Html.DisplayFor(modelItem => item.description)
+                                        @item.description
                                     </div>
                                     <div class="w3-right w3-tag w3-red w3-round">
                                         @Html.ActionLink("Add To Cart", "Add", new { Id = item.food_id })

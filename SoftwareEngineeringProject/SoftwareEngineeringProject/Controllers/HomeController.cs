@@ -32,19 +32,19 @@ namespace SoftwareEngineeringProject.Controllers
             return View();
         }
 
-        public IActionResult Reciept()
+        public IActionResult Receipt()
         {
             return View();
         }
 
-        public IActionResult Cart()
+        public IActionResult CartView()
         {
-            return View();
+            return View(Cart.Contents);
         }
 
         public IActionResult Orders()
         {
-            return View();
+            return View(AllOrders.Orders);
         }
 
         public IActionResult Add(int Id)
