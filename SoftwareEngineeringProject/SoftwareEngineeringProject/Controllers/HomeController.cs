@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace SoftwareEngineeringProject.Controllers
 {
@@ -21,7 +23,8 @@ namespace SoftwareEngineeringProject.Controllers
         //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
-            return View();
+            List<MenuItem> List = LoadJson();
+            return View(List);
         }
 
         public IActionResult Payment()
@@ -29,19 +32,37 @@ namespace SoftwareEngineeringProject.Controllers
             return View();
         }
 
-        public IActionResult Reciept()
+        public IActionResult Receipt()
         {
             return View();
         }
 
-        public IActionResult Cart()
+        public IActionResult CartView()
         {
-            return View();
+            return View(Cart.Contents);
         }
 
         public IActionResult Orders()
         {
-            return View();
+            return View(AllOrders.Orders);
+        }
+
+        public IActionResult Add(int Id)
+        {
+            List<MenuItem> tempMenu = LoadJson();
+            var item = tempMenu.Find(delegate (MenuItem item) { return item.food_id == Id; });
+            Models.Cart.AddToCart(item);
+            return RedirectToAction("Index", "Home");
+        }
+
+        public List<MenuItem> LoadJson()
+        {
+            using (StreamReader s = new StreamReader("menu.json"))
+            {
+                string json = s.ReadToEnd();
+                List<MenuItem> items = JsonConvert.DeserializeObject<List<MenuItem>>(json);
+                return items;
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
