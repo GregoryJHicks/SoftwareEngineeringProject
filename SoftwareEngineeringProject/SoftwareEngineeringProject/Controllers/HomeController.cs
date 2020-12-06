@@ -32,7 +32,7 @@ namespace SoftwareEngineeringProject.Controllers
             return View();
         }
 
-        public IActionResult Reciept()
+        public IActionResult Receipt()
         {
             return View();
         }
@@ -44,7 +44,7 @@ namespace SoftwareEngineeringProject.Controllers
 
         public IActionResult Orders()
         {
-            return View();
+            return View(AllOrders.Orders);
         }
 
         public IActionResult Add(int Id)
