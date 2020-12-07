@@ -1,41 +1,93 @@
 ﻿@model SoftwareEngineeringProject.Models.Order
 
 
-
-
-<hr />
-<div>
-    <div>
+<div class="w3-row w3-border-dark-grey w3-red">
+    <div class="w3-center w3-padding-large w3-container w3-border-dark-gray">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CHECKOUT</h1>
+        <div class="w3-white">
+            <!-- Example Item Format -->
+            @{
+                foreach (var item in Cart.Contents)
+                {
+                    <div class="flex-container">
+                        <div class="menu-item--name" style="width:650px;text-align:left;">
+                            <h1>
+                                @item.food_name
+                            </h1>
+                        </div>
+                        <div class="menu-item--price" style="width:100px;text-align:right;">
+                            <h1>
+                                <span class="w3-tag w3-dark-grey w3-round w3-padding-small">
+                                    @item.price
+                                </span>
+                            </h1>
+                        </div>
+                    </div>
+                }
+            }
+            <div>
+                <div class="w3-center">
+                    @{
+                        var SubTotal = 0.0F;
+                        foreach (var item in Cart.Contents)
+                        {
+                            SubTotal = SubTotal + item.price;
+                        }
+                        double NewSubTotal = Math.Round(SubTotal, 2);
+                        double Tax = Math.Round(SubTotal * 0.0696, 2);
+                        double Total = Math.Round(NewSubTotal + Tax, 2);
+                    }
+                    <h1>
+                        <span class="w3-center w3-right w3-dark-grey w3-round w3-padding-small">
+                            Subtotal: @Math.Round(SubTotal, 2)
+                            <br />
+                            Tax: @Math.Round(Tax, 2)
+                            <br />
+                            Total: @Math.Round(Total, 2)
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <div class="w3-left w3-padding-small">
         <form asp-action="PaymentProcessing">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div>
                 <label asp-for="Name" class="checkoutfont"></label>
+                <br />
                 <input asp-for="Name" class="checkoutfont" minlength="1" required />
-                <span asp-validation-for="Name" class="checkoutfont" ></span>
+                <span asp-validation-for="Name" class="checkoutfont"></span>
             </div>
             <div>
-                <label asp-for="Address" class="checkoutfont" ></label>
+                <label asp-for="Address" class="checkoutfont"></label>
+                <br />
                 <input asp-for="Address" class="checkoutfont" minlength="1" required />
-                <span asp-validation-for="Address" class="checkoutfont" ></span>
+                <span asp-validation-for="Address" class="checkoutfont"></span>
             </div>
             <div>
-                <label asp-for="CardNumber" class="checkoutfont" ></label>
+                <label asp-for="CardNumber" class="checkoutfont"></label>
+                <br />
                 <input asp-for="CardNumber" class="checkoutfont" minlength="16" maxlength="16" required />
-                <span asp-validation-for="CardNumber" class="checkoutfont" ></span>
+                <span asp-validation-for="CardNumber" class="checkoutfont"></span>
             </div>
             <div>
-                <label asp-for="ExperationDate" class="checkoutfont" ></label>
-                <input asp-for="ExperationDate" class="checkoutfont" required />
-                <span asp-validation-for="ExperationDate" class="checkoutfont" ></span>
+                <label asp-for="ExpirationDate" class="checkoutfont"></label>
+                <br />
+                <input asp-for="ExpirationDate" class="checkoutfont" required />
+                <span asp-validation-for="ExpirationDate" class="checkoutfont"></span>
             </div>
             <div>
-                <label asp-for="SecurityCode" class="checkoutfont" ></label>
+                <label asp-for="SecurityCode" class="checkoutfont"></label>
+                <br />
                 <input asp-for="SecurityCode" class="checkoutfont" required />
-                <span asp-validation-for="SecurityCode" class="checkoutfont" ></span>
+                <span asp-validation-for="SecurityCode" class="checkoutfont"></span>
             </div>
-            <div asp-validation-summary="ModelOnly" class="checkoutfont" ></div>
+            <div asp-validation-summary="ModelOnly" class="checkoutfont"></div>
             <div class="form-group checkoutfont">
-                <input type="submit" value="Create" class="btn btn-primary checkoutfont" />
+                <br />
+                <input type="submit" value="Checkout" class="btn btn-primary checkoutfont" />
             </div>
         </form>
     </div>

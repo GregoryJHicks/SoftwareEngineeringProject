@@ -23,10 +23,18 @@
                     @{
                         foreach (var item in Model)
                         {
-                            @item.Name
-                            @item.Address
-                            @item.CardNumber
-                            @item.TimeOfOrder
+                            <div>
+                                <h1>
+                                    Name: @item.Name
+                                </h1>
+                                <h1>
+                                    Address: @item.Address
+                                </h1>
+                                <h1>
+                                    Time: @item.TimeOfOrder
+                                </h1>
+                                <hr />
+                            </div>
                             foreach (var item2 in item.Contents)
                             {
                                 <div class="flex-container">
@@ -41,12 +49,14 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="menu-item--price flex-container w3-text-grey" style="width:600px;text-align:left;">
-                                    @item2.description
-                                </div>
+                                <hr />
                             }
-                            @item.Total
-                            <hr />
+                                <div class="menu-item--price flex-container w3-text-grey">
+                                    <span class="w3-tag w3-dark-grey w3-round">
+                                        Total: @Math.Round(item.Total, 2)
+                                    </span>
+                                </div>
+                            <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
                         }
                     }
                 </div>

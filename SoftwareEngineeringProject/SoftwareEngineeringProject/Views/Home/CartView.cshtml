@@ -16,11 +16,10 @@
 
 <div class="w3-container w3-red w3-padding-64 w3-xxlarge">
     <div class="w3-content">
-
         <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MY CART</h1>
         <div class="w3-row w3-center w3-border w3-border-dark-grey">
             <div class="w3-padding-large">
-                <div class="w3-white">
+                <div class="w3-white w3-padding-large">
                     <!-- Example Item Format -->
                     @{
                         foreach (var item in Model)
@@ -45,7 +44,7 @@
                             Total
                         </h1>
                         <div class=" w3-center w3-tag w3-red w3-round menu-item--price">
-                            @{ 
+                            @{
                                 var SubTotal = 0.0F;
                                 foreach (var item in Model)
                                 {
@@ -57,7 +56,9 @@
                         </div>
                     </div>
                     <hr />
-                    <a class="w3-bar-item w3-button" asp-area="" asp-controller="Home" asp-action="Checkout">Checkout</a>
+                    <div class="w3-tag w3-red w3-round">
+                        <a class="w3-bar-item w3-button w3-red w3-padding-small" asp-area="" asp-controller="Home" asp-action="Checkout">Checkout</a>
+                    </div>
                 </div>
             </div>
         </div>

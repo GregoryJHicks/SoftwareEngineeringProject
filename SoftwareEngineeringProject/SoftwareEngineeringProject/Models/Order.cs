@@ -27,7 +27,7 @@ namespace SoftwareEngineeringProject.Models
         public string Address;
         public string Name;
         public string CardNumber;
-        public string ExperationDate;
+        public string ExpirationDate;
         public string SecurityCode;
 
 
@@ -36,7 +36,7 @@ namespace SoftwareEngineeringProject.Models
             Name = tempName;
             Address = tempAddress;
             CardNumber = tempCardNumber;
-            ExperationDate = tempExperationDate;
+            ExpirationDate = tempExperationDate;
             SecurityCode = tempSecurityCode;
             foreach (var item in Cart.Contents)
             {
@@ -63,7 +63,7 @@ namespace SoftwareEngineeringProject.Models
 
         private decimal CalculateTotal()
         {
-            AddedTax = SubTotal + Convert.ToDecimal(TaxRate);
+            AddedTax = SubTotal * Convert.ToDecimal(TaxRate);
             return SubTotal + AddedTax;
         }
     }
