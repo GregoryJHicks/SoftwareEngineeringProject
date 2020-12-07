@@ -55,14 +55,20 @@ namespace SoftwareEngineeringProject.Controllers
             return View(AllOrders.Orders);
         }
 
+        public IActionResult ResetCart()
+        {
+            Cart.ResetCart();
+            return RedirectToAction("CartView", "Home");
+        }
+
         public IActionResult Add(int Id)
         {
             List<MenuItem> tempMenu = LoadJson();
             var item = tempMenu.Find(delegate (MenuItem item) { return item.food_id == Id; });
-            Models.Cart.AddToCart(item);
+            Cart.AddToCart(item);
             return RedirectToAction("Index", "Home");
         }
-
+        
         public List<MenuItem> LoadJson()
         {
             using (StreamReader s = new StreamReader("menu.json"))

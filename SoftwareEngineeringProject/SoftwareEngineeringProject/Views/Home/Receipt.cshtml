@@ -19,6 +19,9 @@
                         Order Name: @Model.Name
                     </p>
                     <hr>
+
+                    <!--Below is a for loop that will display every item in the order. Since the page is passed an order object, it can freely access it's contents list-->
+
                     @{
                         foreach (var item in Model.Contents)
                         {
@@ -33,6 +36,10 @@
                             <hr>
                         }
                     }
+
+                    <!--Below we use the Math library to round each value to two decimal places.
+                        This is due to occasional errors we had where the program would use more than two decimals when displaying the total price-->
+
                     <h1>
                         <span class="w3-right w3-tag w3-dark-grey w3-round">
                             Subtotal: @Math.Round(Model.SubTotal, 2)
