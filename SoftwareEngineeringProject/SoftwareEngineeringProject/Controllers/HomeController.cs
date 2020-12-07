@@ -20,21 +20,29 @@ namespace SoftwareEngineeringProject.Controllers
             _logger = logger;
         }
 
-        //View section: it contains all of the actions that run each page
         public IActionResult Index()
         {
             List<MenuItem> List = LoadJson();
             return View(List);
         }
 
-        public IActionResult Payment()
+        // Would handle processing of the payment
+        public IActionResult PaymentProcessing(string name, string address, string cardNumber, string experationDate, string securityCode) 
+        {
+            Order temp = new Order();
+            temp.ProcessOrder(name, address, cardNumber, experationDate, securityCode);
+            AllOrders.Add(temp);
+            return RedirectToAction("Receipt", "Home");
+        }
+
+        public IActionResult Checkout()
         {
             return View();
         }
 
         public IActionResult Receipt()
         {
-            return View();
+            return View(AllOrders.Last());
         }
 
         public IActionResult CartView()

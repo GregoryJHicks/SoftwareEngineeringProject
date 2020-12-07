@@ -28,6 +28,34 @@
             .menu-item--price {
                 display: inline-block;
             }
+
+            .text-danger {
+                color: #dc3545 !important;
+            }
+
+            a.text-danger:hover, a.text-danger:focus {
+                color: #a71d2a !important;
+            }
+
+            .form-control {
+                display: block;
+                width: 100%;
+                height: calc(1.5em + 0.75rem + 2px);
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            }
+
+            .checkoutfont {
+                font-family: Arial, Helvetica, sans-serif;
+            }
         </style>
     </head>
     <body>
@@ -37,5 +65,8 @@
         <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
         </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
     </body>
 </html>

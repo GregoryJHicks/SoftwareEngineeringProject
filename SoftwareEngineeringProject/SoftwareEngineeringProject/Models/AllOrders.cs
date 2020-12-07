@@ -9,9 +9,14 @@ namespace SoftwareEngineeringProject.Models
     {
         public static List<Order> Orders = new List<Order>();
 
-        public static void AddToOrders(Order temp)
+        public static void Add(Order temp)
         {
             Orders.Add(temp);
+        }
+
+        public static Order Last()
+        {
+            return Orders.LastOrDefault();
         }
     }
 }

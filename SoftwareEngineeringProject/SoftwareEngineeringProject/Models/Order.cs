@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,40 +8,63 @@ namespace SoftwareEngineeringProject.Models
 {
     public class Order
     {
-        private const float TaxRate = .0696F; //This is the real tax rate for georgia after including local sales tax
+        private const float TaxRate = .0696F; //This is the real tax rate for Georgia after including local sales tax
 
         public List<MenuItem> Contents = new List<MenuItem>();
-        public string Name;
-        public List<string> Address = new List<string>();
-        public int CardNumber;
         public int OrderId;
-        public float SubTotal;
-        public float Total;
         public bool Active;
+        public DateTime TimeOfOrder;
 
-        public Order()
+        [DataType(DataType.Currency)]
+        public decimal SubTotal;
+
+        [DataType(DataType.Currency)]
+        public decimal Total;
+
+        [DataType(DataType.Currency)]
+        public decimal AddedTax;
+
+        public string Address;
+        public string Name;
+        public string CardNumber;
+        public string ExpirationDate;
+        public string SecurityCode;
+
+
+        public void ProcessOrder(string tempName, string tempAddress, string tempCardNumber, string tempExperationDate, string tempSecurityCode)
         {
-            Contents = Cart.Contents;
+            Name = tempName;
+            Address = tempAddress;
+            CardNumber = tempCardNumber;
+            ExpirationDate = tempExperationDate;
+            SecurityCode = tempSecurityCode;
+            foreach (var item in Cart.Contents)
+            {
+                Contents.Add(item);
+            }
             SubTotal = CalculateSubTotal();
             Total = CalculateTotal();
             Active = true;
 
+            TimeOfOrder = DateTime.Now;
+
             Cart.ResetCart();
         }
 
-        private float CalculateSubTotal()
+        private decimal CalculateSubTotal()
         { 
-            float count = 0.0F;
+            decimal count = 0.00M;
             foreach (var item in Contents)
             {
-                count = +item.price;
+                count = count + Convert.ToDecimal(item.price);
             }
             return count;
         }
 
-        private float CalculateTotal()
+        private decimal CalculateTotal()
         {
-            return SubTotal + (SubTotal * TaxRate);
+            AddedTax = SubTotal * Convert.ToDecimal(TaxRate);
+            return SubTotal + AddedTax;
         }
     }
 }
