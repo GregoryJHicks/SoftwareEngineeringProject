@@ -33,12 +33,11 @@
                             <hr>
                         }
                     }
-
                     <h1>
                         <span class="w3-right w3-tag w3-dark-grey w3-round">
                             Subtotal: @Math.Round(Model.SubTotal, 2)
                             <br />
-                            Tax: @Math.Round(Model.GetTaxRate(), 2)
+                            Tax: @Math.Round(Model.AddedTax, 2)
                             <br />
                             Total: @Math.Round(Model.Total, 2)
                         </span>

@@ -52,6 +52,10 @@
                 border-radius: 0.25rem;
                 transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
             }
+
+            .checkoutfont {
+                font-family: Arial, Helvetica, sans-serif;
+            }
         </style>
     </head>
     <body>
@@ -61,5 +65,8 @@
         <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
         </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
     </body>
 </html>

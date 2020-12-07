@@ -12,22 +12,32 @@ namespace SoftwareEngineeringProject.Models
 
         public List<MenuItem> Contents = new List<MenuItem>();
         public int OrderId;
-        public float SubTotal;
-        public float Total;
         public bool Active;
         public DateTime TimeOfOrder;
 
-        [Required]
+        [DataType(DataType.Currency)]
+        public decimal SubTotal;
+
+        [DataType(DataType.Currency)]
+        public decimal Total;
+
+        [DataType(DataType.Currency)]
+        public decimal AddedTax;
+
         public string Address;
-        [Required]
         public string Name;
-        [Required]
-        [StringLength(maximumLength:16,ErrorMessage = "That is not a valid card number", MinimumLength = 16)]
         public string CardNumber;
+        public string ExperationDate;
+        public string SecurityCode;
 
 
-        public void ProcessOrder()
+        public void ProcessOrder(string tempName, string tempAddress, string tempCardNumber, string tempExperationDate, string tempSecurityCode)
         {
+            Name = tempName;
+            Address = tempAddress;
+            CardNumber = tempCardNumber;
+            ExperationDate = tempExperationDate;
+            SecurityCode = tempSecurityCode;
             foreach (var item in Cart.Contents)
             {
                 Contents.Add(item);
@@ -41,38 +51,20 @@ namespace SoftwareEngineeringProject.Models
             Cart.ResetCart();
         }
 
-        //public Order(string TempAddress, string TempName, string TempCardNumber)
-        //{
-        //    Contents = Cart.Contents;
-        //    SubTotal = CalculateSubTotal();
-        //    Total = CalculateTotal();
-        //    Active = true;
-
-        //    Address = TempAddress;
-        //    Name = TempName;
-        //    CardNumber = TempCardNumber;
-
-        //    Cart.ResetCart();
-        //}
-
-        private float CalculateSubTotal()
+        private decimal CalculateSubTotal()
         { 
-            float count = 0.0F;
+            decimal count = 0.00M;
             foreach (var item in Contents)
             {
-                count = count + item.price;
+                count = count + Convert.ToDecimal(item.price);
             }
             return count;
         }
 
-        private float CalculateTotal()
+        private decimal CalculateTotal()
         {
-            return SubTotal + (SubTotal * TaxRate);
-        }
-
-        public double GetTaxRate()
-        {
-            return Convert.ToDouble(TaxRate) * 100;
+            AddedTax = SubTotal + Convert.ToDecimal(TaxRate);
+            return SubTotal + AddedTax;
         }
     }
 }

@@ -108,7 +108,6 @@ C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProjec
 C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\SoftwareEngineeringProject.pdb
 C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\SoftwareEngineeringProject.genruntimeconfig.cache
 C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Orders.cshtml.g.cs
-C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Payment.cshtml.g.cs
 C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Receipt.cshtml.g.cs
 C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\bin\Debug\netcoreapp3.1\appsettings.json
@@ -225,3 +224,4 @@ C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringPr
 C:\Users\death\Documents\GitHub\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\SoftwareEngineeringProject.genruntimeconfig.cache
 C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\bin\Debug\netcoreapp3.1\menu.json
 C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\CartView.cshtml.g.cs
+C:\Code\GitHub Repositories\SoftwareEngineeringProject\SoftwareEngineeringProject\SoftwareEngineeringProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Checkout.cshtml.g.cs
