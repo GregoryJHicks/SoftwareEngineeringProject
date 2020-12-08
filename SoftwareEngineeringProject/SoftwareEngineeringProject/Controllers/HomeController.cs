@@ -35,26 +35,31 @@ namespace SoftwareEngineeringProject.Controllers
             return RedirectToAction("Receipt", "Home");
         }
 
+        //loads the checkout page
         public IActionResult Checkout()
         {
             return View();
         }
 
+        //loads the reciept page
         public IActionResult Receipt()
         {
             return View(AllOrders.Last());
         }
 
+        //loads the cart page
         public IActionResult CartView()
         {
             return View(Cart.Contents);
         }
 
+        //loads the past orders page
         public IActionResult Orders()
         {
             return View(AllOrders.Orders);
         }
 
+        //adds an item to the cart
         public IActionResult Add(int Id)
         {
             List<MenuItem> tempMenu = LoadJson();
@@ -63,6 +68,7 @@ namespace SoftwareEngineeringProject.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        //loads the json menu list into a list
         public List<MenuItem> LoadJson()
         {
             using (StreamReader s = new StreamReader("menu.json"))

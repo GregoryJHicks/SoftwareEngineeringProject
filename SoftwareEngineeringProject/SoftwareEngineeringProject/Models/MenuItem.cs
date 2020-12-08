@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineeringProject.Models
 {
-    
+    //this class is used to make the objects that are put into the cart
     public class MenuItem
     {
         public int food_id { get; set; }
