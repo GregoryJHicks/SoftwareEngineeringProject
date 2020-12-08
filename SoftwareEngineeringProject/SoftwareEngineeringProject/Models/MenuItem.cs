@@ -10,7 +10,7 @@ namespace SoftwareEngineeringProject.Models
     {
         public int food_id { get; set; }
         public string food_name { get; set; }
-        public float price { get; set; }
+        public decimal price { get; set; }
         public string description { get; set; }
     }
 }

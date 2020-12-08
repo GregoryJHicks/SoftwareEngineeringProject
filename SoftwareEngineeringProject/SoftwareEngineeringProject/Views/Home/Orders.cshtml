@@ -19,7 +19,7 @@
         <div class="w3-row w3-center w3-border w3-border-dark-grey">
             <div class="w3-padding-large">
                 <div class="w3-white">
-                    
+
                     <!--Below is the for loop which allows this page to dislay every order created durring the session-->
                     @{
                         foreach (var item in Model)
@@ -37,7 +37,7 @@
                                 <hr />
                             </div>
 
-                            <!--Below is the -->
+                            <!--Below is the for loop which allows this page to display all items in this specific order-->
                             foreach (var item2 in item.Contents)
                             {
                                 <div class="flex-container">
@@ -54,11 +54,14 @@
                                 </div>
                                 <hr />
                             }
-                                <div class="menu-item--price flex-container w3-text-grey">
-                                    <span class="w3-tag w3-dark-grey w3-round">
-                                        Total: @Math.Round(item.Total, 2)
-                                    </span>
-                                </div>
+
+                            <!--Below we use the Math library to round each value to two decimal places.
+                            This is due to occasional errors we had where the program would use more than two decimals when displaying the total price-->
+                            <div class="menu-item--price flex-container w3-text-grey">
+                                <span class="w3-tag w3-dark-grey w3-round">
+                                    Total: @Math.Round(item.Total, 2)
+                                </span>
+                            </div>
                             <hr style="height:2px;border-width:0;color:gray;background-color:gray" />
                         }
                     }
