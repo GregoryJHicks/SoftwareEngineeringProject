@@ -20,7 +20,8 @@
         <div class="w3-row w3-center w3-border w3-border-dark-grey">
             <div class="w3-padding-large">
                 <div class="w3-white w3-padding-large">
-                    <!-- Example Item Format -->
+                    
+                    <!--Below is the for loop that allows the program to display all items in the cart to the page.-->
                     @{
                         foreach (var item in Model)
                         {
@@ -44,18 +45,24 @@
                             Total
                         </h1>
                         <div class=" w3-center w3-tag w3-red w3-round menu-item--price">
+                            <!--Since the order has not been placed yet, we cannot use precalculated calues for SubTotal, AddedTax, and Total, therefore we must do some calculations here.-->
                             @{
-                                var SubTotal = 0.0F;
+                                decimal SubTotal = 0.0M;
                                 foreach (var item in Model)
                                 {
                                     SubTotal = SubTotal + item.price;
                                 }
-                                double NewSubTotal = Math.Round(SubTotal, 2);
+                                <!--Below we use the Math library to round each value to two decimal places.
+                                This is due to occasional errors we had where the program would use more than two decimals when displaying the total price-->
+                                decimal NewSubTotal = Math.Round(SubTotal, 2);
                             }
                             @NewSubTotal
                         </div>
                     </div>
                     <hr />
+                    <div class="w3-tag w3-dark-gray w3-round">
+                        <a class="w3-bar-item w3-button w3-dark-gray w3-padding-small" asp-area="" asp-controller="Home" asp-action="ResetCart">Empty Cart</a>
+                    </div>
                     <div class="w3-tag w3-red w3-round">
                         <a class="w3-bar-item w3-button w3-red w3-padding-small" asp-area="" asp-controller="Home" asp-action="Checkout">Checkout</a>
                     </div>
